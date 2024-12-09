@@ -1,0 +1,131 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: white;
+  color: black;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: goldenrod;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Default: Display items in a row on larger screens */
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.navbar a:hover{
+  background-color: goldenrod;
+  padding: 10px;
+}
+
+.cart-btn {
+  font-weight: bold;
+}
+
+/* Hamburger/Toggle Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger-icon .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.close-icon {
+  font-size: 1.5rem;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack items vertically on small screens */
+    gap: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu.open {
+    display: flex; /* Display menu when open */
+  }
+
+  .navbar ul {
+    display: none; /* Hide the default row layout on small screens */
+  }
+}
+
+@media (min-width: 769px) {
+
+  .navbar {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar ul {
+    display: flex; /* Display items in a row on larger screens */
+    gap: 2rem; /* Adjust space between items */
+   
+  }
+
+  .menu {
+    display: flex; /* Ensure menu stays as row on large screens */
+    position: static; /* Remove absolute positioning */
+    flex-direction: row; /* Items in row on large screens */
+    gap: 2rem; /* Space between items in the menu */
+    background-color: transparent; /* Transparent background */
+    box-shadow: none; /* No box shadow */
+  }
+
+  .hamburger {
+    display: none; /* Hide the hamburger on large screens */
+  }
+
+  .cart-btn{
+    background-color: goldenrod;
+    border: 1px solid transparent;
+    padding: 5px;
+   
+  }
+
+}

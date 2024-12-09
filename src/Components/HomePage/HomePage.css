@@ -1,0 +1,70 @@
+.home-page{
+    background-image: url(/Images/restaurant-background-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   padding-bottom: 10rem;
+   margin: 0;
+   color: white;
+}
+ 
+.text{
+   padding-top: 13rem;
+   text-align: center;
+}
+
+.text h1{
+    font-size: 35px;
+   padding: 0;
+   margin: 0;
+}
+
+.text h2{
+    margin: 0.8rem;
+}
+
+.text p{
+    
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-button{
+    background-color: goldenrod;
+    padding: 10px;
+    color: white;
+    border: 1px solid transparent;
+    margin-top: 1rem;
+}
+
+.menu-button:hover{
+    background-color: green;
+}
+
+.offer-button{
+    background-color: transparent;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+
+  
+
+@media(min-width:768px){
+
+
+    .text h1{
+        font-size: 50px;
+    }
+
+    .text h2{
+        margin: 1rem;
+    }
+
+    .text p{
+        color: goldenrod;
+        padding: 0.5rem;
+    }
+
+    
+}

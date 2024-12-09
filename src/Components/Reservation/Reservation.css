@@ -1,0 +1,136 @@
+/* Main container */
+.reservation-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Title */
+  .reservation-title {
+    font-size: 1.8rem;
+    color: #b76e79;
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  .reservation-form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .reservation-form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .reservation-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .reservation-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Error messages */
+  .reservation-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  /* Submit button */
+  .reservation-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reservation-button:hover {
+    background-color: #944c5c;
+  }
+  
+  /* Popup */
+  .reservation-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .reservation-popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .popup-title {
+    font-size: 1.5rem;
+    color: #b76e79;
+    margin-bottom: 10px;
+  }
+  
+  .popup-message {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .popup-button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .popup-button:hover {
+    background-color: #944c5c;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .reservation-container {
+      padding: 40px 20px;
+    }
+  
+    .reservation-title {
+      font-size: 2rem;
+    }
+  
+    .reservation-form {
+      max-width: 500px;
+    }
+  
+    .reservation-button {
+      width: auto;
+      padding: 12px 20px;
+    }
+  }
+ 

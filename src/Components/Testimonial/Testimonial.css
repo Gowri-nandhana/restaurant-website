@@ -1,0 +1,78 @@
+
+/* Base Styles for Mobile */
+.testimonials-section {
+    padding: 40px 20px;
+   background-image: url(https://static.vecteezy.com/system/resources/previews/001/959/920/large_2x/blurred-busy-restaurant-background-free-photo.JPG);
+    color: #333;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .testimonials-container h2 {
+    font-size: 2rem;
+    color: #b76e79;
+    margin-bottom: 10px;
+  }
+  
+  .testimonials-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .testimonials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .testimonial-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+    font-style: italic;
+  }
+  
+  .testimonial-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #b76e79;
+  }
+  
+  .testimonial-item span {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Tablet and Larger Screens */
+  @media (min-width: 768px) {
+    .testimonials-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    .testimonial-item {
+      width: 90%;
+    }
+  }
+  
